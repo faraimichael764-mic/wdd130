@@ -1,0 +1,39 @@
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style for aside section */
+aside {
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Keep image aspect ratio */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Style main profile image separately */
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Remove padding from paragraphs */
+p {
+  padding: 0;
+}
+
+/* Style footer */
+footer {
+  margin-top: 20px;
+  border-top: 2px solid #999;
+  text-align: center;
+}
