@@ -4,9 +4,17 @@ nav {
   padding: 10px; /* adds space inside the nav */
 }
 
+/* Navigation links styling */
+nav a {
+  color: white; /* sets text color */
+  padding: 8px 12px; /* adds spacing around links */
+  display: block; /* ensures links fill clickable area */
+  text-decoration: none; /* removes underlines */
+}
+
 /* Style for main heading */
 h1 {
-  color: #333366; /* changes text color for visibility */
+  color: #333366; /* dark blue for readability */
 }
 
 /* Limit main content width */
@@ -19,9 +27,10 @@ main {
 main img {
   width: 150px;
   height: auto;
-  border: 2px solid #ccc; /* adds a thin border */
-  padding: 5px; /* adds spacing inside border */
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* adds soft shadow */
+  border: 2px solid #ccc;
+  padding: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 /* Style for aside section */
@@ -37,17 +46,17 @@ aside {
 /* Keep image aspect ratio in aside */
 aside img {
   width: 200px;
-  height: auto; /* maintains original proportion */
+  height: auto;
 }
 
 /* Paragraph styling */
 p {
-  padding: 0; /* removes default padding */
+  padding: 0;
 }
 
 /* Footer styling */
 footer {
-  margin-top: 15px; /* space above footer */
-  border-top: 1px solid #000; /* distinct top border */
-  text-align: center; /* centers footer text */
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
 }
