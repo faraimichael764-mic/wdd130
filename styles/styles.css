@@ -1,7 +1,27 @@
+/* Navigation bar styling */
+nav {
+  background-color: #0077b6; /* sets the nav background color */
+  padding: 10px; /* adds space inside the nav */
+}
+
+/* Style for main heading */
+h1 {
+  color: #333366; /* changes text color for visibility */
+}
+
 /* Limit main content width */
 main {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 800px; /* limits width of the main section */
+  margin: 0 auto;   /* centers main content */
+}
+
+/* Profile image inside main section */
+main img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #ccc; /* adds a thin border */
+  padding: 5px; /* adds spacing inside border */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* adds soft shadow */
 }
 
 /* Style for aside section */
@@ -14,27 +34,20 @@ aside {
   color: #333;
 }
 
-/* Keep image aspect ratio */
+/* Keep image aspect ratio in aside */
 aside img {
   width: 200px;
-  height: auto;
+  height: auto; /* maintains original proportion */
 }
 
-/* Style main profile image separately */
-main img {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Remove padding from paragraphs */
+/* Paragraph styling */
 p {
-  padding: 0;
+  padding: 0; /* removes default padding */
 }
 
-/* Style footer */
+/* Footer styling */
 footer {
-  margin-top: 20px;
-  border-top: 2px solid #999;
-  text-align: center;
+  margin-top: 15px; /* space above footer */
+  border-top: 1px solid #000; /* distinct top border */
+  text-align: center; /* centers footer text */
 }
