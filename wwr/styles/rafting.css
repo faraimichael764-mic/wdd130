@@ -24,7 +24,8 @@ body {
 
 /* Limit page width */
 header, main, footer {
-  width: 840px;
+  max-width: 840px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -32,29 +33,49 @@ header, main, footer {
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+/* Header Grid */
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header-grid .logo {
+  width: 150px;
 }
 
 /* Navigation */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-nav {
-  background-color: var(--primary-color);
-  padding: 10px;
-}
+  nav ul li {
+    margin-left: 16px;
+  }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  padding: 8px 12px;
-}
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background-color: var(--accent1-color);
+  }
 
 /* Hero section */
 .hero {
   position: relative;
+   margin-bottom: 30px;
 }
 
 .hero img {
@@ -69,9 +90,10 @@ nav a {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: var(--accent1-color);
   color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 /* Article overlay */
@@ -83,6 +105,7 @@ nav a {
   padding: 10px;
   width: 60%;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .hero article img {
@@ -93,12 +116,40 @@ nav a {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* History section */
+.history {
+  margin-bottom: 30px;
+}
+
+/* Adventures section */
+.adventures {
+  margin-bottom: 30px;
+}
+
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.adventure-grid figure {
+  text-align: center;
+}
+
+.adventure-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
 /* Footer */
 footer {
   text-align: center;
   border-top: 2px solid var(--secondary-color);
   margin-top: 20px;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .socialmedia a {
