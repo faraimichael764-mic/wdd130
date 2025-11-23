@@ -7,10 +7,10 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -148,7 +148,8 @@ footer {
   align-items: center;
   border-top: 2px solid var(--secondary-color);
   margin-top: 20px;
-  padding: 10px 0;
+  padding: 18px 0;
+  text-align: center;
 }
 
 .socialmedia a {
@@ -157,6 +158,6 @@ footer {
 }
 
 .socialmedia img {
-  width: 30px;
+  width: 40px;
   height: auto;
 }
