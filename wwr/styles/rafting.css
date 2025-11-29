@@ -281,7 +281,7 @@ img {
     justify-content: center;
     align-items: flex-start;
     gap: 0px;
-    padding-top: 0px;
+    padding: 0px;
     max-width: 1000px;
     margin: 10px;
     border: 1px;
@@ -338,11 +338,6 @@ footer {
   bottom: 80px;
   margin: .2%;
 }
-
-a:-webkit-any-link{
-    color: -webkit-link;
-    cursor: pointer;
- }
 
 .socialmedia img {
   width: 30px;
