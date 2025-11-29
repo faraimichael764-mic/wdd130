@@ -128,13 +128,7 @@ nav li {
   flex: 1 1 auto;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
- li {
+li {
   display: list-item;
   unicode-bidi: isolate;
  }
@@ -150,7 +144,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
 }
 
 /* Hero section */
@@ -250,7 +244,7 @@ section {
 }
 
 h1, h2 {
-  font-family: var(--heading-font);
+  font-family: var(--body-font);
   color: var(--primary-color);
   text-align: center;
   background-color: var(--accent1-color);
