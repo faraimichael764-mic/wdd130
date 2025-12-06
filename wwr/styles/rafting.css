@@ -239,7 +239,13 @@ form {
   gap: 12px;
 }
 
-form input, form textarea, form button {
+form input {
+  padding: 10px;
+  border: 2px solid #555;
+  border-radius: 4px;
+}
+
+form textarea, form button {
   width: 100%;
   padding: 10px;
   border: 2px solid #555;
