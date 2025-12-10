@@ -4,87 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Contact Rapids Adventures Company for inquiries, reservations, feedback, and more about our thrilling white water rafting experiences.">
-    <meta name="author" content="Farai Moyo">
     <title>Rapids Adventures | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
     <header>
-        <div class="header-grid">
-            <img src="images/logo.png" alt="Rapids Adventures Logo" class="logo">
+        <div class="header-inner">
+            <div class="logo-placeholder">
+                <img src="images/logo.png" alt="Logo">
+            </div>
             <nav>
-                <ul class="nav">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html" class="active">Contact Us </a></li>
+                    <li><a href="contact.html" class="active" style="background-color: #FFF57E;">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="contact-container">
+    <main>
         <section class="company-info">
             <h1>Contact Rapids Adventures</h1>
             <p>764 Main Street<br>Midrand, South Africa</p>
-            <ul>
-                <li><strong>Phone:</strong> (123) 456-7890</li>
-                <li><strong>Email:</strong> info@rapidsadventure.com</li>
-                <li><strong>Operating Hours:</strong> Mon-Fri: 8am - 6pm, Sat-Sun: 9am - 5pm</li>
-            </ul>
+            <p><b>Phone: </b>(123) 456-7890<br><b>Email: </b>info@rapidsadventure.com<br><b>Operating Hours:
+                </b>Operating
+                Hours: Mon-Fri: 8am - 6pm, Sat-Sun: 9am - 5pm</p>
         </section>
 
-        <section class="contact flex">
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7172.862274743784!2d28.115204009858168!3d-25.98669070300042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sza!4v1764696823450!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <section class="contact-wrapper">
 
-            <form>
-                <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <div class="map-box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7172.862274743784!2d28.115204009858168!3d-25.98669070300042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sza!4v1764696823450!5m2!1sen!2sza"
+                    width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"> width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
 
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <form class="contact-form">
 
-                <p>Message Purpose</p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation" required> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="website" required> Website Suggestion</label>
-                <label><input type="radio" name="purpose" value="feedback" required> Feedback</label>
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Placeholder">
+                </div>
 
-                <label for="message"></label>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Placeholder">
+                </div>
 
-                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                <div class="radio-group">
+                    <p class="radio-label">Message Purpose</p>
+                    <div class="radios">
+                        <label><input type="radio" name="purpose"> General Inquiry</label>
+                        <label><input type="radio" name="purpose"> Reservation Question</label>
+                        <label><input type="radio" name="purpose"> Website Suggestion</label>
+                    </div>
+                </div>
 
-                <button type="submit">Get In Touch!</button>
+                <div class="message-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Type here"></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="sub">
+                    <label for="sub">Please Subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
             </form>
         </section>
 
-        <section class="employees">
-            <h2>We Are Here To Serve You</h2>
+        <section class="employees-section">
+            <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
                 <div class="employee-card">
-                    <img src="images/employee1.jpg" alt="Employee 1">
-                    <h3>Jane Doe</h3>
-                    <p>Customer Relations Manager</p>
+                    <div class="img-placeholder">
+                        <img src="images/jane-doe.jpg" alt="Employee 1">
+                    </div>
+                    <p style="margin-bottom: 20px;"><b>Jane Doe</b></p>
+                    <p>Customer Relations<br>Manager
+                    <p>
                 </div>
                 <div class="employee-card">
-                    <img src="images/employee2.jpg" alt="Employee 2">
-                    <h3>John Smith</h3>
+                    <div class="img-placeholder">
+                        <img src="images/john-smith.jpg" alt="Employee 2">
+                    </div>
+                    <p style="margin-bottom: 20px;"><b>John Smith</b></p>
                     <p>Lead Guide</p>
                 </div>
                 <div class="employee-card">
-                    <img src="images/employee3.jpg" alt="Employee 3">
-                    <h3>Emily Johnson</h3>
+                    <div class="img-placeholder">
+                        <img src="images/emily-johnson.jpg" alt="Employee 3">
+                    </div>
+                    <p style="margin-bottom: 20px;"><b>Emily Johnson</b></p>
                     <p>Marketing Specialist</p>
                 </div>
                 <div class="employee-card">
-                    <img src="images/employee4.jpg" alt="Employee 4">
-                    <h3>Michael Brown</h3>
+                    <div class="img-placeholder">
+                        <img src="images/michael-brown.jpg" alt="Employee 4">
+                    </div>
+                    <p style="margin-bottom: 20px;"><b>Michael Brown</b></p>
                     <p>Operations Coordinator</p>
                 </div>
             </div>
@@ -93,18 +122,19 @@
 
     <footer>
         <p>2025 © Rapids Adventures | Designed by Farai Moyo</p>
-        <nav class="socialmedia a">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook Icon">
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="LinkedIn Icon">
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram Icon">
+            <a href="https://instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
             </a>
-        </nav>
-     </footer>
+        </div>
+    </footer>
+
 </body>
 
 </html>
