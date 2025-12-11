@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="About Us page for Rapids Adventures — an exciting white water rafting experience offering fun and safety for all thrill seekers.">
+        content="Explore exciting rafting trips available at Rapids Adventures — fun, safe, and unforgettable experiences for all ages.">
     <meta name="author" content="Farai Moyo">
-    <title>Rapids Adventures | About Us</title>
+    <title>Rapids Adventures | Trips</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -19,7 +19,7 @@
                 <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="trips.html" aria-current="page">Trips</a></li>
                     <li><a href="contact.html">Contact Us </a></li>
                 </ul>
             </nav>
@@ -27,62 +27,108 @@
     </header>
 
     <main>
+
+        <!-- Hero -->
         <div class="hero">
-            <img src="images/hero.webp" alt="Rafting team navigating a rapid">
-            <h1>Rapids Adventures</h1>
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy rafting client">
-                <p>At Rapids Adventures, our mission is to create unforgettable white water experiences that connect
-                    people to nature and adventure while ensuring safety and fun.</p>
-            </article>
+            <img src="images/hero.webp" alt="Rafting adventure on the river">
+            <h1>Our Rafting Trips</h1>
         </div>
 
-        <section class="history img">
-            <h2>History</h2>
-            <div class="history-boxes">
-            <p class="left">
-                Founded in 2010, Rapids Adventures began with a simple dream — to share the beauty and thrill of
-                river
-                rafting with explorers from around the world. Our team has guided thousands safely through
-                exhilarating
-                rapids and serene river stretches.
-            </p>
-            <p>
-                <img src="images/founding-team.jpg" alt="Founding Team of Rapids Adventures">
-            </p>
-            <p class="right">
-                Over the years, we've expanded our offerings to include a variety of trips catering to all skill levels,
-                from
-                beginners to seasoned rafters. Our commitment to safety, environmental stewardship, and customer
-                satisfaction
-                has made us a trusted name in the adventure tourism industry.
-            </p>
+        <section class="Adventures">
+            <h2>Choose Your Next Adventure!</h2>
+            <p class="center">Here are some of the exciting trips offered at Rapids Adventures.</p>
+
+            <div class="adventure-grid">
+
+                <figure>
+                    <img src="images/trip1.jpg" alt="Beginner River Float">
+                    <figcaption>
+                        <strong>Beginner River Float</strong><br>
+                        A gentle, scenic float perfect for families and first-time rafters.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/trip2.jpg" alt="Half-Day Rapids">
+                    <figcaption>
+                        <strong>Half-Day Rapids</strong><br>
+                        Enjoy thrilling rapids with a shorter time commitment.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/trip3.jpg" alt="Full-Day Adventure">
+                    <figcaption>
+                        <strong>Full-Day Adventure</strong><br>
+                        A full-day journey with exciting rapids and beautiful river views.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/trip4.jpg" alt="Extreme Rapids Challenge">
+                    <figcaption>
+                        <strong>Extreme Rapids Challenge</strong><br>
+                        For adrenaline seekers ready for powerful, advanced-level rapids.
+                    </figcaption>
+                </figure>
+
             </div>
         </section>
 
-        <section class="Adventures">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-grid">
-                  <figure><img src="images/big-mallard.jpg" alt="Big Mallard">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>                <figure>
-                    <img src="images/half-day.jpg" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/white-rapids.jpg" alt="White Rapids">
-                    <figcaption>White Rapids</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/river-explorer.jpg" alt="River Explorer">
-                    <figcaption>River Explorer</figcaption>
-                </figure>
-            </div>
+        <!-- Trip Summary Table -->
+        <section class="trip-table">
+            <h2>Trip Summary</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Beginner River Float</td>
+                        <td>2 Hours</td>
+                        <td>Easy</td>
+                        <td>$40</td>
+                    </tr>
+
+                    <tr>
+                        <td>Half-Day Rapids</td>
+                        <td>4 Hours</td>
+                        <td>Medium</td>
+                        <td>$80</td>
+                    </tr>
+
+                    <tr>
+                        <td>Full-Day Adventure</td>
+                        <td>8 Hours</td>
+                        <td>Medium–Hard</td>
+                        <td>$150</td>
+                    </tr>
+
+                    <tr>
+                        <td>Extreme Rapids Challenge</td>
+                        <td>5 Hours</td>
+                        <td>Hard</td>
+                        <td>$180</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="center small">Prices may vary based on season and group size.</p>
         </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <p>Want to book a trip or need more information?</p>
+            <a href="contact.html" class="cta-button">Contact Us Today</a>
+        </section>
+
     </main>
 
     <footer>
@@ -99,6 +145,7 @@
             </a>
         </nav>
     </footer>
+
 </body>
 
 </html>
